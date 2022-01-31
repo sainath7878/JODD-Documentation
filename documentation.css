@@ -7,38 +7,46 @@
 @import "https://jodd-component-css.netlify.app/component/avatar/avatar.css";
 @import "https://jodd-component-css.netlify.app/component/badge/badge.css";
 @import "https://jodd-component-css.netlify.app/component/button/button.css";
+@import "https://jodd-component-css.netlify.app/component/card/card.css";
 
 
 /* -------header start-------- */
 .header{
-    background-color: var(--PRIMARY-COLOR);
+    background-color: var(--BACKGROUND-COLOR);
     padding: 1rem;
     width: 100vw;
     z-index: 2;
     justify-content: space-between;
+    box-shadow: 1px 1px 7px 3px grey;
 }
 
 .header-nav-link,
 .brand-link{
     text-decoration: none;
-    color: var(--BACKGROUND-COLOR);
+    color: var(--PRIMARY-COLOR);
 }
 
 .brand-link{
     font-size: 3rem;
     color: var(--SECONDARY-COLOR);
     margin-left: 2rem;
+    font-weight: 900;
 }
 
 .header-nav-link{
     font-size: 2rem;
     margin-right: 2rem;
 }
+
+.header-nav-link:hover{
+    color: var(--SECONDARY-COLOR);
+    transition: 0.3s;
+}
 /* ------- header end -------  */
 
 main{
     display: grid;
-    grid-template-columns: 20% 1fr 5%;
+    grid-template-columns: 22% 1fr 5%;
     grid-template-areas: 
     "side-nav documentation ...."
     ;
@@ -60,7 +68,8 @@ main{
     top: 0;
     overflow-y: scroll;
     height: 100vh;
-    box-shadow: 10px 0 3px -2px #888;
+    box-shadow: 5px 0 3px -2px #888;
+
 
 }
 
@@ -75,8 +84,17 @@ main{
 
 .nav-link > a:hover{
     color: var(--SECONDARY-COLOR);
-    margin-right: 0.5rem;
-    transition: all 0.3s ease-in-out;
+    transition: 0.5s;
+    animation: navlink 0.5s ease-in-out 1 forwards;
+}
+
+@keyframes navlink{
+    0%{
+        margin-left: 3rem;
+    }
+    100%{
+        margin-left: 4rem;
+    }
 }
 
 /* ------documentation start----- */
