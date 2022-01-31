@@ -126,10 +126,13 @@ section > *{
     font-weight: bold;
 }
 
+.code-container{
+    max-width: 100%;
+}
+
 .html {
     border-radius: 1rem;
     white-space: pre-line;
-    overflow-x: scroll;
 }
 
 /* -------main end -----  */
@@ -158,6 +161,10 @@ section > *{
         width: 90vw;
     }
 
+    .html{
+        overflow: scroll;
+    }
+
     .documentation{
         padding: 1rem;
     }
@@ -165,6 +172,7 @@ section > *{
     .section{
         max-width: 100%;
         padding: 0.5rem;
+        margin-bottom: 2rem;
     }
 
     .card{
@@ -216,5 +224,9 @@ section > *{
 
     .horizontal-card{
         width: 70%;
+    }
+
+    .section > *:nth-last-child(1){
+        margin-bottom: 0;
     }
 }
