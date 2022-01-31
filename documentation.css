@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Work+Sans:wght@300&display=swap');
+
+@import "https://jodd-component-css.netlify.app/component/reset/reset.css";
+@import "https://jodd-component-css.netlify.app/component/root/root.css";
+@import "https://jodd-component-css.netlify.app/component/utility/utility.css";
+@import "https://jodd-component-css.netlify.app/component/alert/alert.css";
+@import "https://jodd-component-css.netlify.app/component/avatar/avatar.css";
+
+/* -------header start-------- */
+.header{
+    background-color: var(--PRIMARY-COLOR);
+    padding: 1rem;
+    width: 100vw;
+    z-index: 2;
+    justify-content: space-between;
+}
+
+.header-nav-link,
+.brand-link{
+    text-decoration: none;
+    color: var(--BACKGROUND-COLOR);
+}
+
+.brand-link{
+    font-size: 3rem;
+    color: var(--SECONDARY-COLOR);
+    margin-left: 2rem;
+}
+
+.header-nav-link{
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+/* ------- header end -------  */
+
+main{
+    display: grid;
+    grid-template-columns: 20% 1fr 5%;
+    grid-template-areas: 
+    "side-nav documentation ...."
+    ;
+}
+
+/* ---------side-nav start---------- */
+.nav-link > a{
+    color: var(--BACKGROUND-COLOR);
+    margin-left: 3rem;
+
+}
+
+.side-nav{
+    grid-area: side-nav;
+    padding: 2rem 3rem;
+    background-color: var(--PRIMARY-COLOR);
+    border-right: 2px solid var(--PRIMARY-COLOR);
+    position: sticky;
+    top: 0;
+    overflow-y: scroll;
+    height: 100vh;
+    box-shadow: 10px 0 3px -2px #888;
+
+}
+
+.side-nav > p{
+    color: var(--BACKGROUND-COLOR);
+}
+
+.nav-link{
+    list-style: none;
+    margin-bottom: 3rem;
+}
+
+.nav-link > a:hover{
+    color: var(--SECONDARY-COLOR);
+    margin-right: 0.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+/* ------documentation start----- */
+.documentation{
+    grid-area: documentation;
+    margin-left: 1rem;
+    width: 100%;
+}
+
+.section{
+    padding: 2rem;
+    border-bottom: 2px solid var(--SECONDARY-COLOR);
+}
+
+.section > p{
+    font-weight: lighter;
+}
+
+section > *{
+    margin-bottom: 3rem;
+}
+
+.section:nth-last-child(1){
+    border-bottom: none;
+}
+
+.highlight{
+    font-weight: bold;
+}
+
+.html {
+    border-radius: 1rem;
+    white-space: pre-line;
+}
