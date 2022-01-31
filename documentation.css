@@ -103,3 +103,8 @@ section > *{
 .highlight{
     font-weight: bold;
 }
+
+.html {
+    border-radius: 1rem;
+    white-space: pre-line;
+}
