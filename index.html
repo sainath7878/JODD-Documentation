@@ -4,9 +4,138 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- -------- Highlight JS -----------  -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+
+      <link rel="stylesheet" href="./documentation.css">
     <title>JODD UI</title>
 </head>
 <body>
-    
+    <!-- -----Header Start--------- -->
+    <header class="header d-flex align-center">
+        <a href="index.html" class="brand-link">JODD UI</a>
+        <div class="header-right">
+            <a href="index.html" class="header-nav-link">Home</a>
+            <a href="#" class="header-nav-link">Docs</a>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- ---------Side Navbar start------------ -->
+        <aside>
+            <nav class="side-nav">
+                <p class="fs-m mb-2">
+                    Components
+                </p>
+                <ul class="nav-pills">
+                    <li class="nav-link">
+                        <a href="#introduction" class="fs-s">Getting Started</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#alert" class="fs-s">Alert</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#avatar" class="fs-s">Avatar</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#badge" class="fs-s">Badge</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#button" class="fs-s">Button</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#card" class="fs-s">Cards</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#image" class="fs-s">Image</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#input" class="fs-s">Input</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <!-- ---------Side Navbar end------------ -->
+        <div class="documentation">
+
+            <!-- ------Getting Started--------- -->
+            <section id="introduction" class="section">
+                <h1 class="fs-l">Introduction</h1>
+                <p class="fs-s "> JODD UI is a free, fast, lightweight framework for building websites.</p>
+                <h2 class="fs-ml">How to Use?</h2>
+                <p class="fs-s ">Copy Paste the link to your href in <span class="highlight">&lt;link&gt;</span> before all other stylesheets.</p>
+                
+                <pre class="code-container">
+                    <code class="html fs-s">
+<link rel="stylesheet" href="https://jodd-component-css.netlify.app/main.css">                       
+                    </code>
+                </pre>
+            </section>
+
+            <!-- -------- Alert----------- -->
+            <section class="section" id="alert">
+                <h2 class="fs-ml">Alert</h2>
+                <p class="fs-s">There are four variants of the alert component <span class="highlight">alert-danger</span>, <span class="highlight">alert-success</span>, <span class="highlight">alert-warning</span>, <span class="highlight">alert-info</span>.</p>
+        
+                <div class="alert alert-success">
+                    <p class="fs-s">A success alert</p>
+                </div>
+                <div class="alert alert-danger">
+                    <p class="fs-s">A danger alert</p>
+                </div>
+                <div class="alert alert-warning">
+                    <p class="fs-s">A warning alert</p>
+                </div>
+                <div class="alert alert-info">
+                    <p class="fs-s">A info alert</p>
+                </div>
+
+                <pre class="code-container">
+                    <code class="html fs-s">
+<div class="alert alert-success">
+    <p class="fs-s">A success alert</p>
+</div>
+
+<div class="alert alert-danger">
+    <p class="fs-s">A danger alert</p>
+</div>
+
+<div class="alert alert-warning">
+    <p class="fs-s">A warning alert</p>
+</div>
+
+<div class="alert alert-info">
+    <p class="fs-s">A info alert</p>
+</div>
+                    </code>
+                </pre>
+            </section>
+
+            <!-- ------ Avatar--------------- -->
+            <section class="section" id="avatar">
+                <h1 class="fs-ml">Avatar</h1>
+                <p class="fs-s">Avatar Component is available in <span class="highlight">4</span> sizes.</p>
+                <img src="assets/avatar.svg" alt="Profile" class="avatar-sm avatar-rounded mr-2"/>
+                <img src="assets/avatar.svg" alt="Profile" class="avatar-m avatar-rounded mr-2"/>
+                <img src="assets/avatar.svg" alt="Profile" class="avatar-l avatar-rounded mr-2"/>
+                <img src="assets/avatar.svg" alt="Profile" class="avatar-xl avatar-rounded mr-2"/>
+                <pre class="code-container">
+                    <code class="html fs-s">
+<img src="Images/avatar.svg" alt="Profile" class="avatar-sm avatar-rounded"/>
+<img src="Images/avatar.svg" alt="Profile" class="avatar-m avatar-rounded"/>
+<img src="Images/avatar.svg" alt="Profile" class="avatar-l avatar-rounded"/>
+<img src="Images/avatar.svg" alt="Profile" class="avatar-xl avatar-rounded"/>
+                    </code>
+                </pre>
+            </section>
+
+        </div>
+
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script src="./component/index.js"></script>
 </body>
 </html>
