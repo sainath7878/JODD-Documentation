@@ -17,7 +17,7 @@
     width: 100vw;
     z-index: 2;
     justify-content: space-between;
-    box-shadow: 1px 1px 7px 3px grey;
+    box-shadow: 1px 1px 7px 3px rgb(128 128 128 / 20%);
 }
 
 .header-nav-link,
