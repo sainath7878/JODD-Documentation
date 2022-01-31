@@ -5,6 +5,9 @@
 @import "https://jodd-component-css.netlify.app/component/utility/utility.css";
 @import "https://jodd-component-css.netlify.app/component/alert/alert.css";
 @import "https://jodd-component-css.netlify.app/component/avatar/avatar.css";
+@import "https://jodd-component-css.netlify.app/component/badge/badge.css";
+@import "https://jodd-component-css.netlify.app/component/button/button.css";
+
 
 /* -------header start-------- */
 .header{
