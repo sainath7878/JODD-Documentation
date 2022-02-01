@@ -1,17 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Work+Sans:wght@300&display=swap');
 
-@import "https://jodd-component-css.netlify.app/component/reset/reset.css";
-@import "https://jodd-component-css.netlify.app/component/root/root.css";
-@import "https://jodd-component-css.netlify.app/component/utility/utility.css";
-@import "https://jodd-component-css.netlify.app/component/alert/alert.css";
-@import "https://jodd-component-css.netlify.app/component/avatar/avatar.css";
-@import "https://jodd-component-css.netlify.app/component/badge/badge.css";
-@import "https://jodd-component-css.netlify.app/component/button/button.css";
-@import "https://jodd-component-css.netlify.app/component/card/card.css";
-@import "https://jodd-component-css.netlify.app/component/image/image.css";
-@import "https://jodd-component-css.netlify.app/component/input/input.css";
-
-
+@import "https://jodd-component-css.netlify.app/main.css";
 
 /* -------header start-------- */
 .header{
@@ -47,7 +36,65 @@
 }
 /* ------- header end -------  */
 
-main{
+/* ---------hero start -------- */
+
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr 10%;
+    grid-template-areas: 
+    "hero-text hero-image ....";
+    gap: 2rem;
+    padding: 4rem;
+    line-height: 1.5;
+}
+
+.hero-text{
+    grid-area: hero-text;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hero-heading{
+    font-size: 3.5rem;
+}
+
+.hero-text > p{
+    width: 70%;
+}
+
+.hero-image{
+    grid-area: hero-image;
+}
+
+.hero-img{
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.hero-text > .btn{
+    max-width: 15rem;
+}
+
+/* --------footer ------  */
+
+.footer{
+    background-color: var(--PRIMARY-COLOR);
+    color: var(--BACKGROUND-COLOR);
+    padding: 3rem;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer-link{
+    color: var(--BACKGROUND-COLOR);
+}
+
+.footer-link:hover{
+    color: var(--SECONDARY-COLOR)
+}
+
+.main{
     display: grid;
     grid-template-columns: 25% 1fr 5%;
     grid-template-areas: 
@@ -142,10 +189,14 @@ section > *{
         font-size: 62.5%;
     }
 
-    main { 
+    .main { 
         grid-template-columns: 1fr;
         grid-template-areas: "documentation";
         padding: 0;
+    }
+
+    .hero-text > P{
+        width: 80%;
     }
 
     .side-nav{
@@ -187,8 +238,25 @@ section > *{
         /* overflow-x: hidden; */
     }
 
-    main{
+    .main{
         padding: 0;
+    }
+
+    .hero{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "hero-text";
+        gap: 2rem;
+        padding: 4rem;
+    }
+
+    .hero-image{
+        display: none;
+    }
+
+    .hero-text > P{
+        width: 80%;
     }
 
     .side-nav{
@@ -215,7 +283,7 @@ section > *{
 
     .section{
         max-width: 100%;
-        padding: 0;
+        padding: 1rem;
     }
 
     .card{
@@ -223,7 +291,7 @@ section > *{
     }
 
     .horizontal-card{
-        width: 70%;
+        max-width: 70%;
     }
 
     .section > *:nth-last-child(1){
