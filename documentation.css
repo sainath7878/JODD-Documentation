@@ -1,17 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Work+Sans:wght@300&display=swap');
 
-@import "https://jodd-component-css.netlify.app/component/reset/reset.css";
-@import "https://jodd-component-css.netlify.app/component/root/root.css";
-@import "https://jodd-component-css.netlify.app/component/utility/utility.css";
-@import "https://jodd-component-css.netlify.app/component/alert/alert.css";
-@import "https://jodd-component-css.netlify.app/component/avatar/avatar.css";
-@import "https://jodd-component-css.netlify.app/component/badge/badge.css";
-@import "https://jodd-component-css.netlify.app/component/button/button.css";
-@import "https://jodd-component-css.netlify.app/component/card/card.css";
-@import "https://jodd-component-css.netlify.app/component/image/image.css";
-@import "https://jodd-component-css.netlify.app/component/input/input.css";
+@import "https://jodd-component-css.netlify.app/main.css";
 
-
+:root{
+    --SIDE-NAVBAR-COLOR: #e5e7eb;
+}
 
 /* -------header start-------- */
 .header{
@@ -47,7 +40,65 @@
 }
 /* ------- header end -------  */
 
-main{
+/* ---------hero start -------- */
+
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr 10%;
+    grid-template-areas: 
+    "hero-text hero-image ....";
+    gap: 2rem;
+    padding: 4rem;
+    line-height: 1.5;
+}
+
+.hero-text{
+    grid-area: hero-text;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hero-heading{
+    font-size: 3.5rem;
+}
+
+.hero-text > p{
+    width: 70%;
+}
+
+.hero-image{
+    grid-area: hero-image;
+}
+
+.hero-img{
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.hero-text > .btn{
+    max-width: 15rem;
+}
+
+/* --------footer ------  */
+
+.footer{
+    background-color: var(--PRIMARY-COLOR);
+    color: var(--BACKGROUND-COLOR);
+    padding: 3rem;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer-link{
+    color: var(--BACKGROUND-COLOR);
+}
+
+.footer-link:hover{
+    color: var(--SECONDARY-COLOR)
+}
+
+.main{
     display: grid;
     grid-template-columns: 25% 1fr 5%;
     grid-template-areas: 
@@ -57,7 +108,7 @@ main{
 
 /* ---------side-nav start---------- */
 .nav-link > a{
-    color: var(--BACKGROUND-COLOR);
+    color: var(--PRIMARY-COLOR);
     margin-left: 3rem;
 
 }
@@ -65,18 +116,17 @@ main{
 .side-nav{
     grid-area: side-nav;
     padding: 2rem 3rem;
-    background-color: var(--PRIMARY-COLOR);
-    border-right: 2px solid var(--PRIMARY-COLOR);
+    background-color: var(--SIDE-NAVBAR-COLOR);
     position: sticky;
     top: 0;
-    overflow-y: scroll;
+    overflow-y: auto;
     height: 100vh;
-    box-shadow: 5px 0 3px -2px #888;
+    box-shadow: 1px 1px 7px 3px rgb(128 128 128 / 20%);
 
 }
 
 .side-nav > p{
-    color: var(--BACKGROUND-COLOR);
+    color: var(--PRIMARY-COLOR);
 }
 
 .nav-link{
@@ -106,8 +156,12 @@ main{
 }
 
 .section{
-    padding: 2rem;
+    padding: 2rem 2rem 2rem 6rem;
     border-bottom: 2px solid var(--SECONDARY-COLOR);
+}
+
+.intro-section{
+    padding: 3.5rem;
 }
 
 .section > p{
@@ -142,10 +196,20 @@ section > *{
         font-size: 62.5%;
     }
 
-    main { 
+    .main { 
         grid-template-columns: 1fr;
         grid-template-areas: "documentation";
         padding: 0;
+    }
+
+    .hero{
+        grid-template-columns: 60% 1fr;
+        grid-template-areas: 
+        "hero-text hero-image";
+    }
+
+    .hero-text > P{
+        width: 80%;
     }
 
     .side-nav{
@@ -175,6 +239,10 @@ section > *{
         margin-bottom: 2rem;
     }
 
+    .intro-section{
+        padding: 1rem 4.5rem;
+    }
+
     .card{
         max-width: 50%;
     }
@@ -187,8 +255,25 @@ section > *{
         /* overflow-x: hidden; */
     }
 
-    main{
+    .main{
         padding: 0;
+    }
+
+    .hero{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "hero-text";
+        gap: 2rem;
+        padding: 4rem;
+    }
+
+    .hero-image{
+        display: none;
+    }
+
+    .hero-text > P{
+        width: 80%;
     }
 
     .side-nav{
@@ -215,7 +300,11 @@ section > *{
 
     .section{
         max-width: 100%;
-        padding: 0;
+        padding: 1rem;
+    }
+
+    .intro-section{
+        padding: 1rem 4.5rem;
     }
 
     .card{
@@ -223,7 +312,7 @@ section > *{
     }
 
     .horizontal-card{
-        width: 70%;
+        max-width: 70%;
     }
 
     .section > *:nth-last-child(1){

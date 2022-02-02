@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- -------- Highlight JS -----------  -->
     <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
-
-      <link rel="stylesheet" href="./documentation.css">
+    <!-- ------- Bootstrap Icons CDN --------  -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./documentation.css">
     <title>JODD UI</title>
 </head>
 <body>
@@ -17,547 +17,56 @@
         <a href="index.html" class="brand-link">JODD UI</a>
         <div class="header-right">
             <a href="index.html" class="header-nav-link">Home</a>
-            <a href="#" class="header-nav-link">Docs</a>
+            <a href="docs.html" class="header-nav-link">Docs</a>
+            <a href="https://github.com/sainath7878" class="header-nav-link" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/svm-sainath-90aa061aa/" class="header-nav-link" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://twitter.com/sainath_svm" target="_blank" class="header-nav-link"><i class="bi bi-twitter"></i></a>
+
         </div>
     </header>
 
-    <main class="main">
-        <!-- ---------Side Navbar start------------ -->
-        <aside>
-            <nav class="side-nav">
-                <p class="fs-m mb-2">
-                    Components
-                </p>
-                <ul class="nav-pills">
-                    <li class="nav-link">
-                        <a href="#introduction" class="fs-s">Getting Started</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#alert" class="fs-s">Alert</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#avatar" class="fs-s">Avatar</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#badge" class="fs-s">Badge</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#button" class="fs-s">Button</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#card" class="fs-s">Cards</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#image" class="fs-s">Image</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#input" class="fs-s">Input</a>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
+    <main>
+        <section class="hero">
+            <div class="hero-text d-flex">
+                <h1 class="hero-heading">Build your UI faster.</h1>
+                <p class="fs-ml">Copy and paste the components at one click. It is user-friendly and customizable.</p>
+                <div>
+                    <a href="#introduction" class="btn btn-primary mr-2 fs-s">Get Started</a>
+                    <a href="./docs.html" class="btn btn-secondary-outline mr-2 fs-s">Documentation</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="./assets/hero.svg" alt="hero" class="hero-img">
+            </div>
+        </section>
         
-        <!-- ---------Side Navbar end------------ -->
-        <div class="documentation">
 
-            <!-- ------Getting Started--------- -->
-            <section id="introduction" class="section">
-                <h1 class="fs-l">Introduction</h1>
-                <p class="fs-s "> JODD UI is a free, fast, lightweight framework for building websites.</p>
-                <h2 class="fs-ml">How to Use?</h2>
-                <p class="fs-s ">Copy Paste the link to your href in <span class="highlight">&lt;link&gt;</span> before all other stylesheets.</p>
-                
-                <pre class="code-container">
-                    <code class="html fs-s">
-                        <link rel="stylesheet" href="https://jodd-component-css.netlify.app/main.css">                       
-                    </code>
-                </pre>
-            </section>
-
-            <!-- -------- Alert----------- -->
-            <section class="section" id="alert">
-                <h2 class="fs-ml">Alert</h2>
-                <p class="fs-s">There are four variants of the alert component <span class="highlight">alert-danger</span>, <span class="highlight">alert-success</span>, <span class="highlight">alert-warning</span>, <span class="highlight">alert-info</span>.</p>
-        
-                <div class="alert alert-success">
-                    <p class="fs-s">A success alert</p>
-                </div>
-                <div class="alert alert-danger">
-                    <p class="fs-s">A danger alert</p>
-                </div>
-                <div class="alert alert-warning">
-                    <p class="fs-s">A warning alert</p>
-                </div>
-                <div class="alert alert-info">
-                    <p class="fs-s">A info alert</p>
-                </div>
-
-                <pre class="code-container">
-                    <code class="html fs-s">
-                        <div class="alert alert-success">
-                            <p class="fs-s">A success alert</p>
-                        </div>
-
-                        <div class="alert alert-danger">
-                            <p class="fs-s">A danger alert</p>
-                        </div>
-
-                        <div class="alert alert-warning">
-                            <p class="fs-s">A warning alert</p>
-                        </div>
-
-                        <div class="alert alert-info">
-                            <p class="fs-s">A info alert</p>
-                        </div>
-                    </code>
-                </pre>
-            </section>
-
-            <!-- ------ Avatar--------------- -->
-            <section class="section" id="avatar">
-                <h1 class="fs-ml">Avatar</h1>
-                <p class="fs-s">Avatar Component is available in <span class="highlight">4</span> sizes.</p>
-                <img src="assets/avatar.svg" alt="Profile" class="avatar-sm avatar-rounded mr-2"/>
-                <img src="assets/avatar.svg" alt="Profile" class="avatar-m avatar-rounded mr-2"/>
-                <img src="assets/avatar.svg" alt="Profile" class="avatar-l avatar-rounded mr-2"/>
-                <img src="assets/avatar.svg" alt="Profile" class="avatar-xl avatar-rounded mr-2"/>
-                <pre class="code-container">
-                    <code class="html fs-s">
-                        <img src="assets/avatar.svg" alt="Profile" class="avatar-sm avatar-rounded"/>
-                        <img src="assets/avatar.svg" alt="Profile" class="avatar-m avatar-rounded"/>
-                        <img src="assets/avatar.svg" alt="Profile" class="avatar-l avatar-rounded"/>
-                        <img src="assets/avatar.svg" alt="Profile" class="avatar-xl avatar-rounded"/>
-                    </code>
-                </pre>
-            </section>
-
-            <!-- ------- Badges ----------- -->
-            <section class="section" id="badge">
-                <h1 class="fs-ml">Badge</h1>
-                <h2 class="fs-m">Badge on Avatars</h2>
-                <p class="fs-s">Badge on Avatars consists of <span class="highlight">four</span> components</p>
-                <div class="badge mr-2">
-                    <img src="./assets/avatar.svg"  alt="profile" class="avatar-sm avatar-rounded ">
-                    <span class="indicator indicator-sm"></span>
-                </div>
-
-                <div class="badge mr-2">
-                    <img src="./assets/avatar.svg"  alt="profile" class="avatar-m avatar-rounded ">
-                    <span class="indicator indicator-m"></span>
-                </div>
-
-                <div class="badge mr-2">
-                    <img src="./assets/avatar.svg"  alt="profile" class="avatar-l avatar-rounded ">
-                    <span class="indicator indicator-l"></span>
-                </div>
-
-                <div class="badge mr-2">
-                    <img src="./assets/avatar.svg"  alt="profile" class="avatar-xl avatar-rounded ">
-                    <span class="indicator indicator-xl"></span>
-                </div>
-
-                <pre class="code-container">
-                    <code class="html fs-s">
-                        <div class="badge">
-                            <img src="./assets/avatar.svg"  alt="profile" class="avatar-sm avatar-rounded ">
-                            <span class="indicator indicator-sm"></span>
-                        </div>
-
-                        <div class="badge">
-                            <img src="./assets/avatar.svg"  alt="profile" class="avatar-m avatar-rounded ">
-                            <span class="indicator indicator-m"></span>
-                        </div>
-
-                        <div class="badge">
-                            <img src="./assets/avatar.svg"  alt="profile" class="avatar-l avatar-rounded ">
-                            <span class="indicator indicator-l"></span>
-                        </div>
-
-                        <div class="badge">
-                            <img src="./assets/avatar.svg"  alt="profile" class="avatar-xl avatar-rounded ">
-                            <span class="indicator indicator-xl"></span>
-                        </div>
-                    </code>
-                </pre>
-
-                <h1 class="fs-m">Badge on Icons</h1>
-                <p class="fs-s">Badge on icons consists of <span class="highlight">two</span> components.</p>
-                <div class="badge mr-2">
-                    <img src="./assets/shoppingcart.svg" alt="Cart" class="badge-icon">
-                    <span class="text-badge d-flex-center">10+</span>
-                </div>
-
-                <div class="badge mr-2">
-                    <img src="./assets/MdiBell.svg" alt="Bell" class="badge-icon">
-                    <span class="text-badge d-flex-center">5</span>
-                </div>
-
-                <pre class="code-container">
-                    <code class="html fs-s">
-                        <div class="badge">
-                            <img src="./assets/shoppingcart.svg" alt="Cart" class="badge-icon">
-                            <span class="text-badge d-flex-center">10+</span>
-                        </div>
-
-                        <div class="badge">
-                            <img src="./assets/MdiBell.svg" alt="Bell" class="badge-icon">
-                            <span class="text-badge d-flex-center">5</span>
-                        </div>
-                    </code>
-                </pre>
-            </section>
-
-            <!-- -------Buttons------------- -->
-            <section class=" section" id="button">
-                <h1 class="fs-ml">Buttons</h1>
-                <p class="fs-s">Button consists of <span class="highlight">four </span>Components
-                    <span class="highlight">Primary, </span>
-                    <span class="highlight">Link, </span>
-                    <span class="highlight">Icon Button, </span>
-                    <span class="highlight">Floating Action.</span></p>
-                <h2 class="fs-m">Solid Buttons</h2>
-                <button class="btn btn-primary mr-2">Primary</button>
-                <button class="btn btn-danger mr-2">Danger</button>
-                <pre class="code-container">
-                    <code class="html fs-s">
-                        <button class="btn btn-primary">Primary</button>
-                        <button class="btn btn-danger">Danger</button>
-                    </code>
-                </pre>
-
-                <!-- ------- Outline Buttons -------  -->
-                <h2 class="fs-m">Outline Buttons</h2>
-                <button class="btn btn-primary-outline mr-2">Primary</button>
-                <button class="btn btn-danger-outline mr-2">Danger</button>
-                <pre class="code-container">
-                    <code class="html fs-s">
-                        <button class="btn btn-primary-outline">Primary</button>
-                        <button class="btn btn-danger-outline">Danger</button>
-                    </code>
-                </pre>
-
-                <h2 class="fs-m">Icon Button</h2>
-                    <button class="btn btn-primary d-flex-inline-center mr-2">
-                        <img src="./assets/shopping-cart-solid.svg" alt="cart" class="btn-icon"> Add to Cart
-                    </button>
-                    <button class="btn btn-danger d-flex-inline-center">
-                        <img src="./assets/BiTrashFill.svg" alt="cart" class="btn-icon"> Delete
-                    </button>
-                    <pre class="code-container">
-                        <code class="html fs-s">
-                            <button class="btn btn-primary d-flex-inline-center">
-                                <img src="./assets/shopping-cart-solid.svg" alt="cart" class="btn-icon"> Add to Cart
-                            </button>
-
-                            <button class="btn btn-danger d-flex-inline-center">
-                                <img src="./assets/BiTrashFill.svg" alt="cart" class="btn-icon"> Delete
-                            </button>
-                        </code>
-                    </pre>
-            </section>
-
-            <section class="section" id="card">
-                <h1 class="fs-ml">Cards</h1>
-                <p class="fs-s">Card consists of 5 components</p>
-
-                <!-- -------- Card with Badge and Card with Shadow----------- -->
-                <h2 class="fs-m">
-                    Card With Badge
-                </h2>
-                <div class="card card-shadow">
-                    <img src="./assets/card.jpg" alt="Valorant" class="card-image">
-                    <h1 class="fs-s card-text-highlight">
-                        VALORANT
-                    </h1>
-                    <p class="fs-s">
-                        A 5v5 character-based tactical FPS where precise gunplay meets unique agent abilities.
-                    </p>
-                    <p class="fs-s">
-                        <del>₹1499</del> ₹999
-                        <span class="discount">34%</span>
-                    </p>
-                    <button class="btn btn-primary d-flex-center">
-                        <img src="./assets/shopping-cart-solid.svg" alt="cart" class="btn-icon"> Add to Cart
-                    </button>
-                    <span class="card-badge">
-                        On Sale
-                    </span>
-                </div>
-                <pre class="code-container">
-                    <code class="html fs-s">
-                        <div class="card card-shadow">
-                            <img src="./assets/card.jpg" alt="Valorant" class="card-image">
-                            <h1 class="fs-s card-text-highlight">
-                                VALORANT
-                            </h1>
-                            <p class="fs-s">
-                                A 5v5 character-based tactical FPS where precise gunplay meets unique agent abilities.
-                            </p>
-                            <p class="fs-s">
-                                <del>₹1499</del> ₹999
-                                <span class="discount">34%</span>
-                            </p>
-                            <button class="btn btn-primary d-flex-center">
-                                <img src="./assets/shopping-cart-solid.svg" alt="cart" class="btn-icon"> Add to Cart
-                            </button>
-                            <span class="card-badge">
-                                On Sale
-                            </span>
-                        </div>
-                    </code>
-                </pre>
-
-                <!-- --------- Card with Dismiss --------  -->
-                <h2 class="fs-m">Card with Dismiss</h2>
-                <div class="card">
-                    <img src="./assets/card.jpg" alt="Valorant" class="card-image">
-                    <h1 class="fs-s card-text-highlight">
-                        VALORANT
-                    </h1>
-                    <p class="fs-s">
-                        A 5v5 character-based tactical FPS where precise gunplay meets unique agent abilities.
-                    </p>
-                    <p class="fs-s">
-                        <del>₹1499</del> ₹999
-                        <span class="discount">34%</span>
-                    </p>
-                    <button class="btn btn-primary d-flex-center">
-                        <img src="./assets/shopping-cart-solid.svg" alt="cart" class="btn-icon"> Add to Cart
-                    </button>
-                    <button class="card-btn-dismiss fs-m">
-                        X
-                    </button>
-                    <span class="card-badge">
-                        On Sale
-                    </span>
-                </div>
-                <pre class="code-container">
-                    <code class="html fs-s">
-                        <div class="card">
-                            <img src="./assets/card.jpg" alt="Valorant" class="card-image">
-                            <h1 class="fs-s card-text-highlight">
-                                VALORANT
-                            </h1>
-                            <p class="fs-s">
-                                A 5v5 character-based tactical FPS where precise gunplay meets unique agent abilities.
-                            </p>
-                            <p class="fs-s">
-                                <del>₹1499</del> ₹999
-                                <span class="discount">34%</span>
-                            </p>
-                            <button class="btn btn-primary d-flex-center">
-                                <img src="./assets/shopping-cart-solid.svg" alt="cart" class="btn-icon"> Add to Cart
-                            </button>
-                            <button class="card-btn-dismiss fs-m">
-                                X
-                            </button>
-                            <span class="card-badge">
-                                On Sale
-                            </span>
-                        </div>
-                    </code>
-                </pre>
-
-                <!-- ------- Text Only Card ------  -->
-                <h2 class="fs-m">Text Only Card</h2>
-                <div class="card text-only-card">
-                    <h1 class="fs-ml">Card Title</h1>
-                    <h2 class="fs-m">Card Sub Title</h2>
-                    <p class="fs-s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab hic non expedita voluptas perferendis natus quam, placeat qui totam eaque ipsum nisi explicabo? In est sint dolor, adipisci unde fuga.</p>
-                    <button class="card-btn-dismiss text-only-dismiss fs-m">
-                        X
-                    </button>
-                </div>
-                <pre class="code-container">
-                    <code class="html fs-s">
-                        <div class="card text-only-card">
-                            <h1 class="fs-ml">Card Title</h1>
-                            <h2 class="fs-m">Card Sub Title</h2>
-                            <p class="fs-s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab hic non expedita voluptas perferendis natus quam, placeat qui totam eaque ipsum nisi explicabo? In est sint dolor, adipisci unde fuga.</p>
-                            <button class="card-btn-dismiss text-only-dismiss fs-m">
-                                X
-                            </button>
-                        </div>
+        <!-- ------Getting Started--------- -->
+        <section id="introduction" class="section intro-section">
+            <h1 class="fs-l">Introduction</h1>
+            <p class="fs-s "> JODD UI is a free, fast, lightweight framework for building websites.</p>
+            <h2 class="fs-ml">How to Use?</h2>
+            <p class="fs-s ">Copy Paste the link to your href in <span class="highlight">&lt;link&gt;</span> before all other stylesheets.</p>
+            
+            <pre class="code-container">
+                <code class="html fs-s">
+                    <link rel="stylesheet" href="https://jodd-component-css.netlify.app/main.css">                       
                 </code>
-                </pre>
-
-                <!-- -------- Horizontal Cards --------  -->
-                <h2 class="fs-m">Horizontal Cards</h2>
-                <div class="horizontal-card">
-                    <img src="./assets/card.jpg" alt="Valorant" class=" horizontal-card-image">
-                    <div class="card-content">
-                        <h1 class="fs-m card-text-highlight">
-                            VALORANT
-                        </h1>
-                        <p class="fs-s">
-                            A 5v5 character-based tactical FPS where precise gunplay meets unique agent abilities.
-                        </p>
-                        <p class="fs-s">
-                            <del>₹1499</del> ₹999
-                            <span class="discount">34%</span>
-                        </p>
-                        <button class="btn btn-primary d-flex-center">
-                            <img src="./assets/shopping-cart-solid.svg" alt="cart" class="btn-icon"> Add to Cart
-                        </button>
-                    </div>
-                </div>
-
-                <pre class="code-container">
-                    <code class="html fs-s">
-                        <div class="horizontal-card">
-                            <img src="./assets/card.jpg" alt="Valorant" class=" horizontal-card-image">
-                            <div class="card-content">
-                                <h1 class="fs-m card-text-highlight">
-                                    VALORANT
-                                </h1>
-                                <p class="fs-s">
-                                    A 5v5 character-based tactical FPS where precise gunplay meets unique agent abilities.
-                                </p>
-                                <p class="fs-s">
-                                    <del>₹1499</del> ₹999
-                                    <span class="discount">34%</span>
-                                </p>
-                                <button class="btn btn-primary d-flex-center">
-                                    <img src="./assets/shopping-cart-solid.svg" alt="cart" class="btn-icon"> Add to Cart
-                                </button>
-                            </div>
-                        </div>
-                    </code>
-                </pre>
-
-                <!-- -------- Card with Text Overlay ---------  -->
-                <h2 class="fs-m">Card with Text Overlay</h2>
-                <div class="card text-overlay-card">
-                    <img src="./assets/card.jpg" alt="Valorant" class="card-image">
-                    <h1 class="fs-s card-text-highlight">
-                        VALORANT
-                    </h1>
-                    <p class="fs-s">
-                        A 5v5 character-based tactical FPS where precise gunplay meets unique agent abilities.
-                    </p>
-                    <p class="fs-s">
-                        <del>₹1499</del> ₹999 
-                        <span class="discount">34%</span>
-                    </p>
-                    <button class="btn btn-primary d-flex-center">
-                        <img src="./assets/shopping-cart-solid.svg" alt="cart" class="btn-icon"> Add to Cart
-                    </button>
-                    <p class="text-overlay discount">KillJoy JODD</p>
-                </div>
-
-                <pre class="code-container">
-                    <code class="html fs-s">
-                        <div class="card text-overlay-card">
-                            <img src="./assets/card.jpg" alt="Valorant" class="card-image">
-                            <h1 class="fs-s card-text-highlight">
-                                VALORANT
-                            </h1>
-                            <p class="fs-s">
-                                A 5v5 character-based tactical FPS where precise gunplay meets unique agent abilities.
-                            </p>
-                            <p class="fs-s">
-                                <del>₹1499</del> ₹999 
-                                <span class="discount">34%</span>
-                            </p>
-                            <button class="btn btn-primary d-flex-center">
-                                <img src="./assets/shopping-cart-solid.svg" alt="cart" class="btn-icon"> Add to Cart
-                            </button>
-                            <p class="text-overlay discount">KillJoy JODD</p>
-                        </div>
-                    </code>
-                </pre>
-            </section>
-
-            <!-- --------Images----------  -->
-            <section class="section" id="image">
-                <h1 class="fs-ml">
-                    Images
-                </h1>
-                <h2 class="fs-m">Responsive Image</h2>
-                <p class="fs-s">Decrease the size of the window to experience the responsiveness.</p>
-                <img src="./assets/image.jpg" alt="random" class="image-res">
-
-                <h2 class="fs-m">
-                    Rounded Image
-                </h2>
-                <img src="./assets/image.jpg" alt="random" class="img-round">
-
-                <pre class="code-container">
-                    <code class="html fs-s">
-                        <img src="./assets/image.jpg" alt="random" class="image-res">   
-                        <img src="./assets/image.jpg" alt="random" class="img-round">         
-                    </code>
-                </pre>
-            </section>
-
-            <!-- -------- Input --------  -->
-            <section class="section mb-2" id="input">
-                <h1 class="fs-ml">Input</h1>
-                <h2 class="fs-m">Input with focus</h2>
-                <form class="form">
-                    <label class="fs-m" for="username">Username</label>
-                    <input type="text" id="username" placeholder="Enter Username" class="form-input">
-
-                    <label class="fs-m" for="Password">Password</label>
-                    <input type="password" id="password" placeholder="Enter Password" class="form-input">
-                    <button class="btn btn-primary">Login</button>
-                </form>
-
-                <pre class="code-container">
-                    <code class="html fs-s">
-                        <form class="form">
-                            <label class="fs-m" for="username">Username</label>
-                            <input type="text" id="username" placeholder="Enter Username" class="form-input">
-
-                            <label class="fs-m" for="Password">Password</label>
-                            <input type="password" id="password" placeholder="Enter Password" class="form-input">
-                            <button class="btn btn-primary">Login</button>
-                        </form>
-                    </code>
-                </pre>
-
-                <h2 class="fs-m">Input with error style</h2>
-                <form class="form">
-                    <p class="fs-m error-style">Enter Correct username or password</p>
-                    <label class="fs-m" for="username">Username</label>
-                    <input type="text" id="username" placeholder="Enter Username" class="form-input error-border">
-
-                    <label class="fs-m" for="Password">Password</label>
-                    <input type="password" id="password" placeholder="Enter Password" class="form-input error-border">
-                    <button class="btn btn-primary">Login</button>
-                </form>
-
-                <pre class="code-container">
-                    <code class="html fs-s">
-                        <form class="form">
-                            <p class="fs-m error-style">Enter Correct username or password</p>
-                            <label class="fs-m" for="username">Username</label>
-                            <input type="text" id="username" placeholder="Enter Username" class="form-input error-border">
-
-                            <label class="fs-m" for="Password">Password</label>
-                            <input type="password" id="password" placeholder="Enter Password" class="form-input error-border">
-                            <button class="btn btn-primary">Login</button>
-                        </form>
-                    </code>
-                </pre>
-
-                <h2 class="fs-m">
-                    Textarea
-                </h2>
-                <textarea id="textarea"  rows="10" class="textarea"></textarea>
-
-                <pre class="code-container">
-                    <code class="html fs-s">
-                        <textarea id="textarea"  rows="10" class="textarea"></textarea>
-                    </code>
-                </pre>
-                
-            </section>
-        </div>
-
-
+            </pre>
+        </section>
     </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
-    <script src="./component/index.js"></script>
+
+    <footer class="footer d-flex align-center justify-center">
+        <p class="fs-s">
+            Made with ❤️ by Sainath
+        </p>
+        <div>
+            <a href="https://github.com/sainath7878" class="footer-link fs-l mr-2" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/svm-sainath-90aa061aa/" class="footer-link" target="_blank"><i class="bi bi-linkedin fs-l mr-2"></i></a>
+            <a href="https://twitter.com/sainath_svm" target="_blank" class="footer-link"><i class="bi bi-twitter fs-l mr-2"></i></a>
+        </div>
+    </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+<script src="./component/index.js"></script>
 </body>
 </html>
