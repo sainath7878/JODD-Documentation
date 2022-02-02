@@ -160,6 +160,10 @@
     border-bottom: 2px solid var(--SECONDARY-COLOR);
 }
 
+.intro-section{
+    padding: 4rem;
+}
+
 .section > p{
     font-weight: lighter;
 }
