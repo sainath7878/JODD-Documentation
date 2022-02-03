@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- -------- Highlight JS -----------  -->
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+    <!-- <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css"> -->
+      <link rel="stylesheet" href="./component/prism.css">
     <!-- ------- Bootstrap Icons CDN --------  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./documentation.css">
@@ -55,6 +56,27 @@
                     <li class="nav-link">
                         <a href="#input" class="fs-s">Input</a>
                     </li>
+                    <li class="nav-link">
+                        <a href="#" class="fs-s">Text Utilities</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" class="fs-s">Lists</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" class="fs-s">Navigation</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" class="fs-s">Modal</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" class="fs-s">Rating</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" class="fs-s">Snackbar</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" class="fs-s">Grids</a>
+                    </li>
                 </ul>
             </nav>
         </aside>
@@ -81,7 +103,7 @@
                 </div>
 
                 <pre class="code-container">
-                    <code class="html fs-s">
+                    <code class="language-html">
                         <div class="alert alert-success">
                             <p class="fs-s">A success alert</p>
                         </div>
@@ -110,7 +132,7 @@
                 <img src="assets/avatar.svg" alt="Profile" class="avatar-l avatar-rounded mr-2"/>
                 <img src="assets/avatar.svg" alt="Profile" class="avatar-xl avatar-rounded mr-2"/>
                 <pre class="code-container">
-                    <code class="html fs-s">
+                    <code class="language-html">
                         <img src="assets/avatar.svg" alt="Profile" class="avatar-sm avatar-rounded"/>
                         <img src="assets/avatar.svg" alt="Profile" class="avatar-m avatar-rounded"/>
                         <img src="assets/avatar.svg" alt="Profile" class="avatar-l avatar-rounded"/>
@@ -145,7 +167,7 @@
                 </div>
 
                 <pre class="code-container">
-                    <code class="html fs-s">
+                    <code class="language-html">
                         <div class="badge">
                             <img src="./assets/avatar.svg"  alt="profile" class="avatar-sm avatar-rounded ">
                             <span class="indicator indicator-sm"></span>
@@ -181,7 +203,7 @@
                 </div>
 
                 <pre class="code-container">
-                    <code class="html fs-s">
+                    <code class="language-html">
                         <div class="badge">
                             <img src="./assets/shoppingcart.svg" alt="Cart" class="badge-icon">
                             <span class="text-badge d-flex-center">10+</span>
@@ -210,10 +232,11 @@
                 <button class="btn btn-secondary btn-float"><i class="bi bi-chevron-up"></i></button>
 
                 <pre class="code-container">
-                    <code class="html fs-s">
+                    <code class="language-html">
                         <button class="btn btn-primary">Primary</button>
                         <button class="btn btn-danger">Danger</button>
                         <button class="btn btn-secondary">Secondary</button>
+                        <button class="btn btn-secondary btn-float"><i class="bi bi-chevron-up"></i></button>
 
                     </code>
                 </pre>
@@ -225,7 +248,7 @@
                 <button class="btn btn-secondary-outline mr-2">Secondary</button>
 
                 <pre class="code-container">
-                    <code class="html fs-s">
+                    <code class="language-html">
                         <button class="btn btn-primary-outline">Primary</button>
                         <button class="btn btn-danger-outline">Danger</button>
                         <button class="btn btn-secondary-outline">Secondary</button>
@@ -241,7 +264,7 @@
                         <img src="./assets/BiTrashFill.svg" alt="cart" class="btn-icon"> Delete
                     </button>
                     <pre class="code-container">
-                        <code class="html fs-s">
+                        <code class="language-html">
                             <button class="btn btn-primary d-flex-inline-center">
                                 <img src="./assets/shopping-cart-solid.svg" alt="cart" class="btn-icon"> Add to Cart
                             </button>
@@ -252,6 +275,8 @@
                         </code>
                     </pre>
             </section>
+
+            <a href="#alert" class="btn btn-secondary btn-float btn-fixed"><i class="bi bi-chevron-up"></i></a>
 
             <section class="section" id="card">
                 <h1 class="fs-ml">Cards</h1>
@@ -281,7 +306,7 @@
                     </span>
                 </div>
                 <pre class="code-container">
-                    <code class="html fs-s">
+                    <code class="language-html">
                         <div class="card card-shadow">
                             <img src="./assets/card.jpg" alt="Valorant" class="card-image">
                             <h1 class="fs-s card-text-highlight">
@@ -329,7 +354,7 @@
                     </span>
                 </div>
                 <pre class="code-container">
-                    <code class="html fs-s">
+                    <code class="language-html">
                         <div class="card">
                             <img src="./assets/card.jpg" alt="Valorant" class="card-image">
                             <h1 class="fs-s card-text-highlight">
@@ -366,11 +391,11 @@
                     </button>
                 </div>
                 <pre class="code-container">
-                    <code class="html fs-s">
+                    <code class="language-html">
                         <div class="card text-only-card">
                             <h1 class="fs-ml">Card Title</h1>
                             <h2 class="fs-m">Card Sub Title</h2>
-                            <p class="fs-s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab hic non expedita voluptas perferendis natus quam, placeat qui totam eaque ipsum nisi explicabo? In est sint dolor, adipisci unde fuga.</p>
+                            <p class="fs-s">Lorem ipsum dolor sit amet consectetur adipisicing elit....</p>
                             <button class="card-btn-dismiss text-only-dismiss fs-m">
                                 X
                             </button>
@@ -400,7 +425,7 @@
                 </div>
 
                 <pre class="code-container">
-                    <code class="html fs-s">
+                    <code class="language-html">
                         <div class="horizontal-card">
                             <img src="./assets/card.jpg" alt="Valorant" class=" horizontal-card-image">
                             <div class="card-content">
@@ -443,7 +468,7 @@
                 </div>
 
                 <pre class="code-container">
-                    <code class="html fs-s">
+                    <code class="language-html">
                         <div class="card text-overlay-card">
                             <img src="./assets/card.jpg" alt="Valorant" class="card-image">
                             <h1 class="fs-s card-text-highlight">
@@ -480,7 +505,7 @@
                 <img src="./assets/image.jpg" alt="random" class="img-round">
 
                 <pre class="code-container">
-                    <code class="html fs-s">
+                    <code class="language-html">
                         <img src="./assets/image.jpg" alt="random" class="image-res">   
                         <img src="./assets/image.jpg" alt="random" class="img-round">         
                     </code>
@@ -501,7 +526,7 @@
                 </form>
 
                 <pre class="code-container">
-                    <code class="html fs-s">
+                    <code class="language-html">
                         <form class="form">
                             <label class="fs-m" for="username">Username</label>
                             <input type="text" id="username" placeholder="Enter Username" class="form-input">
@@ -525,7 +550,7 @@
                 </form>
 
                 <pre class="code-container">
-                    <code class="html fs-s">
+                    <code class="language-html">
                         <form class="form">
                             <p class="fs-m error-style">Enter Correct username or password</p>
                             <label class="fs-m" for="username">Username</label>
@@ -544,7 +569,7 @@
                 <textarea id="textarea"  rows="10" class="textarea"></textarea>
 
                 <pre class="code-container">
-                    <code class="html fs-s">
+                    <code class="language-markup">
                         <textarea id="textarea"  rows="10" class="textarea"></textarea>
                     </code>
                 </pre>
@@ -556,5 +581,6 @@
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <script src="./component/index.js"></script>
+    <script src="./component/prism.js"></script>
 </body>
 </html>
