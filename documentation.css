@@ -7,7 +7,7 @@
 }
 
 pre[class*=language-]{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 /* -------header start-------- */
@@ -156,7 +156,7 @@ pre[class*=language-]{
 /* ------documentation start----- */
 .documentation{
     grid-area: documentation;
-    width: 100%;
+    min-width: 70%;
 }
 
 .section{
@@ -182,15 +182,6 @@ section > *{
 
 .highlight{
     font-weight: bold;
-}
-
-.code-container{
-    max-width: 100%;
-}
-
-.html {
-    border-radius: 1rem;
-    white-space: pre-line;
 }
 
 .btn-fixed{
@@ -230,14 +221,6 @@ section > *{
     .brand-link{
         margin-left: 0;
         margin-right: 2rem;
-    }
-
-     .code-container{
-        width: 100%;
-    }
-
-    .html{
-        overflow: scroll;
     }
 
     .documentation{
@@ -295,10 +278,6 @@ section > *{
 
     .documentation{
         padding: 1rem;
-    }
-
-    .code-container{
-        width: 100%;
     }
 
     .header{
