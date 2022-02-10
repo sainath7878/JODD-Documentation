@@ -116,8 +116,10 @@ a{
 
 /* ---------side-nav start---------- */
 .side-nav-link > a{
+    display: inline-block;
     color: var(--PRIMARY-COLOR);
     margin-left: 3rem;
+    transition: transform 0.5s;
 }
 
 .side-nav{
@@ -143,17 +145,7 @@ a{
 
 .side-nav-link > a:hover{
     color: var(--SECONDARY-COLOR);
-    transition: 0.5s;
-    animation: slide-right 0.5s ease-out 1 forwards;
-}
-
-@keyframes slide-right{
-    0%{
-        margin-left: 3rem;
-    }
-    100%{
-        margin-left: 4rem;
-    }
+    transform: translateX(1rem);
 }
 
 /* ------documentation start----- */
