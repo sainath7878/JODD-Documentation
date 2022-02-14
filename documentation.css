@@ -46,6 +46,7 @@ a{
 .header-nav-link:hover{
     color: var(--SECONDARY-COLOR);
 }
+
 /* ------- header end -------  */
 
 /* ---------hero start -------- */
@@ -141,6 +142,13 @@ a{
 .side-nav-link{
     list-style: none;
     margin-bottom: 3rem;
+}
+
+.side-nav .active{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--SECONDARY-COLOR);
+    transform: translateX(1rem);
 }
 
 .side-nav-link > a:hover{

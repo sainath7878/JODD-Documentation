@@ -1,12 +1,9 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-    document.querySelectorAll('pre code').forEach((el) => {
-        el.innerHTML = el.innerHTML
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;')
-        .replace(/'/g, '&#039;')
-        hljs.highlightElement(el)
+const sideNavAnchors = document.querySelectorAll(".side-nav-anchor");
+
+for(let i=0 ; i< sideNavAnchors.length;i++){
+    sideNavAnchors[i].addEventListener("click",function()  {
+        let current = document.querySelector(".active");
+        current.classList.toggle("active");
+        this.classList.toggle("active");
     })
-    })
-    
+}
