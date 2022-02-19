@@ -160,6 +160,7 @@ a{
 .documentation{
     grid-area: documentation;
     min-width: 70%;
+    position: relative;
 }
 
 .section{
@@ -197,13 +198,21 @@ section > *:nth-last-child(1){
     z-index: 2;
 }
 
-.cta-container{
-    justify-content: space-between;
-    padding: 1rem;
+.lists{
+    flex-wrap: wrap;
+    gap: 5rem;
 }
 
-.cta-container > a:hover{
-    color: var(--SECONDARY-COLOR);
+.snackbar-container{
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.snackbar-demo{
+    display: none;
+    position: fixed;
+    bottom: 5rem;
+    left: 50%;
 }
 
 /* -------main end -----  */
