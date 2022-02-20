@@ -29,6 +29,8 @@ These components are used in the following websites:
 - [JODDKart](https://joddkart.netlify.app/)
 
 
-## Demo
+## Preview
 
 ![App Screenshot](assets/JODD-UI.gif)
+
+## The css for the components used in this documentation website is in a different repo. Please click on the link if you want to explore css of the componnets[JODD CSS](https://github.com/sainath7878/JODD-Component)
