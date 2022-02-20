@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./documentation.css">
     <title>JODD UI</title>
+    <link rel="shortcut icon" href="./assets/favicon.jpg" type="image/x-icon">
 </head>
 <body>
     <!-- -----Header Start--------- -->
@@ -70,13 +71,16 @@
                         <a href="#toast" class="fs-s side-nav-anchor">Toast/Snackbar</a>
                     </li>
                     <li class="side-nav-link">
-                        <a href="#" class="fs-s side-nav-anchor">Modal</a>
+                        <a href="#modal" class="fs-s side-nav-anchor">Modal</a>
                     </li>
                     <li class="side-nav-link">
-                        <a href="#" class="fs-s side-nav-anchor">Rating</a>
+                        <a href="#rating" class="fs-s side-nav-anchor">Rating</a>
                     </li>
                     <li class="side-nav-link">
                         <a href="#" class="fs-s side-nav-anchor">Grids</a>
+                    </li>
+                    <li class="side-nav-link">
+                        <a href="#" class="fs-s side-nav-anchor">Slider</a>
                     </li>
                 </ul>
             </nav>
@@ -994,8 +998,127 @@
 
                 </script>
             </section>
-        </div>
 
+            <section class="section" id="modal">
+                <h1 class="fs-ml">Modal</h1>
+                <div class="modal-container">
+                    <div class="modal">
+                        <div class="modal-header">
+                            <h1 class="fs-m">Modal Header</h1>
+                        </div>
+                        <p class="fs-s">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat in odio impedit magni cum natus, numquam eaque sit culpa autem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quibusdam quae quis aliquid voluptatibus ad facilis voluptatem, quidem distinctio autem odit eligendi placeat voluptas quia, at fuga, explicabo aliquam nisi.</p>
+                        <div class="modal-cta">
+                            <button class="btn btn-secondary mr-sm">Save</button>
+                            <button class="btn btn-primary-outline">Close</button>
+                        </div>
+                    </div>
+                </div>
+
+                <script type="text/plain" class="language-markup line-numbers">
+                    <div class="modal-container">
+                        <div class="modal">
+                            <div class="modal-header">
+                                <h1 class="fs-m">Modal Header</h1>
+                            </div>
+                            <p class="fs-s">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat in odio impedit magni cum natus, numquam eaque sit culpa autem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quibusdam quae quis aliquid voluptatibus ad facilis voluptatem, quidem distinctio autem odit eligendi placeat voluptas quia, at fuga, explicabo aliquam nisi.</p>
+                            <div class="modal-cta">
+                                <button class="btn btn-secondary mr-sm">Save</button>
+                                <button class="btn btn-primary-outline">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </script>
+
+                <h2 class="fs-m">Live Demo of Modal</h2>
+                <button class="btn btn-secondary btn-show-modal">Click Here</button>
+
+                <h2 class="fs-m">Demo Snippet</h2>
+
+                <script type="text/plain" class="language-javascript line-numbers">
+                    <div class="modal-container-demo">
+                        <div class="modal modal-demo">
+                            <div class="modal-header">
+                                <h1 class="fs-m">Modal Header</h1>
+                            </div>
+                            <p class="fs-s">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat in odio impedit magni cum natus, numquam eaque sit culpa autem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quibusdam quae quis aliquid voluptatibus ad facilis voluptatem, quidem distinctio autem odit eligendi placeat voluptas quia, at fuga, explicabo aliquam nisi.</p>
+                            <div class="modal-cta">
+                                <button class="btn btn-secondary mr-sm">Save</button>
+                                <button class="btn btn-primary-outline btn-close">Close</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ------- JavaScript -------  -->
+
+                    const modalContainer = document.querySelector(".modal-container-demo")
+                    const modalClose = document.querySelector(".btn-close");
+                    const showModal = document.querySelector(".btn-show-modal");
+
+                    showModal.addEventListener("click",() => {
+                        modalContainer.style.display = "block";
+                    })
+                    
+                    modalClose.addEventListener("click",()=>{
+                        console.log("clicked");
+                        modalContainer.style.display = "none";
+                    })
+                </script>
+            </section>
+
+            <section class="section" id="rating">
+                <h1 class="fs-l">Rating</h1>
+                <div class="rating">
+                    <input type="radio" id="5-stars" name="rating">
+                    <label for="5-stars" class="fs-m star">&#9733;</label>
+
+                    <input type="radio" id="4-stars" name="rating">
+                    <label for="4-stars" class="fs-m star">&#9733;</label>
+
+                    <input type="radio" id="3-stars" name="rating">
+                    <label for="3-stars" class="fs-m star">&#9733;</label>
+
+                    <input type="radio" id="2-stars" name="rating">
+                    <label for="2-stars" class="fs-m star">&#9733;</label>
+
+                    <input type="radio" id="1-stars" name="rating">
+                    <label for="1-stars" class="fs-m star">&#9733;</label>
+                </div>
+
+                <script type="text/plain" class="language-javascript line-numbers">
+                    <div class="rating">
+                        <input type="radio" id="5-stars" name="rating">
+                        <label for="5-stars" class="fs-m star">&#9733;</label>
+    
+                        <input type="radio" id="4-stars" name="rating">
+                        <label for="4-stars" class="fs-m star">&#9733;</label>
+    
+                        <input type="radio" id="3-stars" name="rating">
+                        <label for="3-stars" class="fs-m star">&#9733;</label>
+    
+                        <input type="radio" id="2-stars" name="rating">
+                        <label for="2-stars" class="fs-m star">&#9733;</label>
+    
+                        <input type="radio" id="1-stars" name="rating">
+                        <label for="1-stars" class="fs-m star">&#9733;</label>
+                    </div>
+                </script>
+
+            </section>
+
+        </div>
+        
+        <div class="modal-container-demo">
+            <div class="modal modal-demo">
+                <div class="modal-header">
+                    <h1 class="fs-m">Modal Header</h1>
+                </div>
+                <p class="fs-s">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat in odio impedit magni cum natus, numquam eaque sit culpa autem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quibusdam quae quis aliquid voluptatibus ad facilis voluptatem, quidem distinctio autem odit eligendi placeat voluptas quia, at fuga, explicabo aliquam nisi.</p>
+                <div class="modal-cta">
+                    <button class="btn btn-secondary mr-sm">Save</button>
+                    <button class="btn btn-primary-outline btn-close">Close</button>
+                </div>
+            </div>
+        </div>
 
     </main>
 <script src="./component/prism.js"></script>
