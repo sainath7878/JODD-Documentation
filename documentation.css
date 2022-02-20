@@ -4,6 +4,8 @@
 
 :root{
     --SIDE-NAVBAR-COLOR: #e5e7eb;
+    --MODAL-BACKGROUND-COLOR: whitesmoke;
+    --OVERLAY-COLOR: #33415580;
 }
 
 pre[class*=language-]{
@@ -53,26 +55,30 @@ a{
 
 .hero{
     display: grid;
-    grid-template-columns: 1fr 1fr 10%;
+    grid-template-columns: 2fr 3fr;
     grid-template-areas: 
-    "hero-text hero-image ....";
+    "hero-text hero-image ";
     gap: 2rem;
+
     padding: 4rem;
     line-height: 1.5;
 }
 
 .hero-text{
     grid-area: hero-text;
+
     flex-direction: column;
     gap: 2rem;
+
+    padding-top: 5rem;
 }
 
 .hero-heading{
-    font-size: 3.5rem;
+    font-size: 5rem;
 }
 
 .hero-text > p{
-    width: 70%;
+    width: 80%;
 }
 
 .hero-image{
@@ -89,12 +95,19 @@ a{
     max-width: 15rem;
 }
 
+.hero-cta{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
 /* --------footer ------  */
 
 .footer{
     background-color: var(--PRIMARY-COLOR);
     color: var(--BACKGROUND-COLOR);
     padding: 3rem;
+
     flex-direction: column;
     gap: 2rem;
 }
@@ -111,8 +124,7 @@ a{
     display: grid;
     grid-template-columns: 25% 1fr 5%;
     grid-template-areas: 
-    "side-nav documentation ...."
-    ;
+    "side-nav documentation ....";
 }
 
 /* ---------side-nav start---------- */
@@ -125,14 +137,15 @@ a{
 
 .side-nav{
     grid-area: side-nav;
+
     padding: 2rem 3rem;
     background-color: var(--SIDE-NAVBAR-COLOR);
-    position: sticky;
-    top: 0;
     overflow-y: auto;
     height: 100vh;
     box-shadow: 1px 1px 7px 3px rgb(128 128 128 / 20%);
 
+    position: sticky;
+    top: 0;
 }
 
 .side-nav > p{
@@ -198,6 +211,19 @@ section > *:nth-last-child(1){
     z-index: 2;
 }
 
+.nav-btn{
+    font-weight: 700;
+    width: 10rem;
+    max-width: 15rem;
+}
+
+.text-badge{
+    top: -1rem;
+    left: 1.2rem;
+    width: 2rem;
+    height: 2rem;
+}
+
 .lists{
     flex-wrap: wrap;
     gap: 5rem;
@@ -215,9 +241,17 @@ section > *:nth-last-child(1){
     left: 50%;
 }
 
+.modal-container-demo{
+    display: none;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    background-color: var(--OVERLAY-COLOR);
+    z-index: 10;
+}
 /* -------main end -----  */
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 768px){
     html{
         font-size: 62.5%;
     }
@@ -229,13 +263,13 @@ section > *:nth-last-child(1){
     }
 
     .hero{
-        grid-template-columns: 60% 1fr;
+        grid-template-columns: 3fr 2fr;
         grid-template-areas: 
         "hero-text hero-image";
     }
 
     .hero-text > P{
-        width: 80%;
+        width: 90%;
     }
 
     .side-nav{
@@ -286,12 +320,25 @@ section > *:nth-last-child(1){
         width: 100%;
     }
 
+    .snackbar-demo{
+        left: 25%
+    }
+
+    .modal{
+        width: 70%;
+    }
+
+    .modal-demo{
+        width: 70%;
+        top: 20%;
+        left: 10%;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
     html{
         font-size: 50%;
-        /* overflow-x: hidden; */
     }
 
     .main{
@@ -304,6 +351,7 @@ section > *:nth-last-child(1){
         grid-template-areas: 
         "hero-text";
         gap: 2rem;
+
         padding: 4rem;
     }
 
@@ -312,7 +360,7 @@ section > *:nth-last-child(1){
     }
 
     .hero-text > P{
-        width: 80%;
+        width: 100%;
     }
 
     .side-nav{
@@ -322,6 +370,7 @@ section > *:nth-last-child(1){
     main { 
     grid-template-columns: 1fr;
     grid-template-areas: "documentation";
+
     padding: 0;
     }
 
@@ -357,41 +406,17 @@ section > *:nth-last-child(1){
         display: block;
     }
 
+    .snackbar-demo{
+        left: 20%
+    }
+
     .hamburger{
         background: transparent;
         color: var(--SECONDARY-COLOR);
     }
+
+    .hamburger:hover{
+        background-color: transparent;
+    }
 }
 /* ------------------------------ */
-
-.hero{
-    background-image: url("./assets/images/banner.jpg");
-    height: 50rem;
-    background-position: top center;
-    background-size: cover;
-    justify-content: end;
-}
-
-.banner{
-    width: 50%
-}
-
-.banner-text{
-    color: var(--BACKGROUND-COLOR);
-    font-size: 4rem;
-    font-family: monospace;
-    line-height: 1.5;
-}
-
-.nav-btn{
-    font-weight: 700;
-    width: 10rem;
-    max-width: 15rem;
-}
-
-.text-badge{
-    top: -1rem;
-    left: 1.2rem;
-    width: 2rem;
-    height: 2rem;
-}
