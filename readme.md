@@ -4,7 +4,7 @@
 
 # JODD UI Component Library
 
-This is a documentation site of all the components to show how the components look like and how they work.
+This is a documentation site for all the components to show how the components look like and how they work.
 
 ## Components
 
