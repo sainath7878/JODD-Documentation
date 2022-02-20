@@ -2,9 +2,25 @@
 ![Logo](./assets/favicon.jpg)
 
 
-# JODD UI Component Library
+<div align="center">
+    <h1> JODD UI Component Library</h1>
+    <p>JODD UI is an open source, free, fast, customizable library. Copy and paste the componets in one click </p>
+ </div>
 
-This is a documentation site for all the components to show how the components look like and how they work.
+## How to Use?
+Copy and paste the below code above all other stylesheets and you're good to go.
+
+```html
+  <link rel="stylesheet" href="https://jodd-component-css.netlify.app/main.css">
+```
+<div align="center">
+    <h2>OR</h2>
+</div>
+
+Import below link in your root CSS file
+```html
+    @import "https://jodd-component-css.netlify.app/main.css";
+```
 
 ## Components
 
