@@ -41,6 +41,5 @@ showModal.addEventListener("click",() => {
 })
 
 modalClose.addEventListener("click",()=>{
-    console.log("clicked");
     modalContainer.style.display = "none";
 })
