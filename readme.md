@@ -37,6 +37,8 @@ Import below link in your root CSS file
 - [Toast/Snackbar](https://jodd-ui.netlify.app/docs.html#toast)
 - [Modal](https://jodd-ui.netlify.app/docs.html#modal)
 - [Rating](https://jodd-ui.netlify.app/docs.html#rating)
+- [Grid](https://jodd-ui.netlify.app/docs.html#grid)
+- [Slider](https://jodd-ui.netlify.app/docs.html#slider)
 
 ## Used By
 
@@ -49,4 +51,4 @@ These components are used in the following websites:
 
 ![App Screenshot](assets/JODD-UI.gif)
 
-## The css for the components used in this documentation website is in a different repo. Please click on the link if you want to explore css of the componnets[JODD CSS](https://github.com/sainath7878/JODD-Component)
+## The css for the components used in this documentation website is in a different repo. Please click on the link if you want to explore css of the components[JODD CSS](https://github.com/sainath7878/JODD-Component)
