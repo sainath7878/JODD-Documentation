@@ -7,6 +7,8 @@
     <p>JODD UI is an open source, free, fast, customizable library. Copy and paste the componets in one click </p>
  </div>
 
+ ## The css for the components used in this documentation website is in a different repo. Please click on the link if you want to explore css of the components [JODD CSS](https://github.com/sainath7878/JODD-Component)
+
 ## How to Use?
 Copy and paste the below code above all other stylesheets and you're good to go.
 
@@ -50,5 +52,3 @@ These components are used in the following websites:
 ## Preview
 
 ![App Screenshot](assets/JODD-UI.gif)
-
-## The css for the components used in this documentation website is in a different repo. Please click on the link if you want to explore css of the components[JODD CSS](https://github.com/sainath7878/JODD-Component)
