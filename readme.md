@@ -20,7 +20,8 @@ Copy and paste the below code above all other stylesheets and you're good to go.
 </div>
 
 Import below link in your root CSS file
-```html
+
+```css
     @import "https://jodd-component-css.netlify.app/main.css";
 ```
 
