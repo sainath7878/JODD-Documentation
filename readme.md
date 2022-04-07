@@ -2,6 +2,8 @@
 ![Logo](./assets/favicon.jpg)
 
 
+[comments.md](./comments.md)
+
 <div align="center">
     <h1> JODD UI Component Library</h1>
     <p>JODD UI is an open source, free, fast, customizable library. Copy and paste the componets in one click </p>
